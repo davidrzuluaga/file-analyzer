@@ -14,10 +14,10 @@ ActiveRecord::Schema.define(version: 20170306032129) do
 
   create_table "file_analyses", force: :cascade do |t|
     t.string   "filename"
-    t.integer  "status"
-    t.integer  "analyzed_rows"
-    t.datetime "created_at",    null: false
-    t.datetime "updated_at",    null: false
+    t.integer  "status",        default: 0
+    t.integer  "analyzed_rows", default: 0
+    t.datetime "created_at",                null: false
+    t.datetime "updated_at",                null: false
   end
 
 end

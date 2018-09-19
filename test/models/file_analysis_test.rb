@@ -4,8 +4,8 @@
 #
 #  id            :integer          not null, primary key
 #  filename      :string
-#  status        :integer
-#  analyzed_rows :integer
+#  status        :integer          default("pending")
+#  analyzed_rows :integer          default(0)
 #  created_at    :datetime         not null
 #  updated_at    :datetime         not null
 #
