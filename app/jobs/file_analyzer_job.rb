@@ -9,7 +9,7 @@ class FileAnalyzerJob < ApplicationJob
 
     csv = CSV.new(file_path)
     csv.each do
-      sleep 2
+      sleep 4
       file_analysis.update(analyzed_rows: file_analysis.analyzed_rows + 1)
     end
 
